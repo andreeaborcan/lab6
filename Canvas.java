@@ -182,7 +182,7 @@ public final class Canvas extends JPanel {
        //G.drawLine(this.getWidth()/2,this.getHeight()/2,this.getWidth(), 0);
         G.drawLine(this.getWidth(),this.getHeight()/2,0, this.getHeight()/2);
         G.drawLine(this.getWidth()/2,0,this.getWidth()/2, this.getHeight());
-        graphics.setColor(Color.BLACK);
+        graphics.setColor(Color.black);
         graphics.drawLine(this.getWidth(),this.getHeight()/2,0, this.getHeight()/2);
         graphics.drawLine(this.getWidth()/2,0,this.getWidth()/2, this.getHeight());
         
@@ -196,14 +196,14 @@ public final class Canvas extends JPanel {
                {
                    a=1;
                    G.setColor(Color.magenta);
-                  
+                  graphics.setColor(Color.magenta);
                    
                    if(i==0)
                  G.drawLine(this.getWidth()/2,this.getHeight()/2,(int) (-i+this.getWidth()/2), (int) (this.getHeight()/2-e.setVariable("x", i/50).evaluate()*marime));
                    else G.drawLine((int) (i+this.getWidth()/2-1), (int) (this.getHeight()/2-e.setVariable("x", (i-1)/marime).evaluate()*marime),(int) (i+this.getWidth()/2), (int) (this.getHeight()/2-e.setVariable("x", i/marime).evaluate()*marime));
                   
                    if(i==0)
-                   { graphics.setColor(Color.magenta);
+                   { 
                  graphics.drawLine(this.getWidth()/2,this.getHeight()/2,(int) (-i+this.getWidth()/2), (int) (this.getHeight()/2-e.setVariable("x", i/marime).evaluate()*marime));}
                    else graphics.drawLine((int) (i+this.getWidth()/2-1), (int) (this.getHeight()/2-e.setVariable("x", (i-1)/marime).evaluate()*marime),(int) (i+this.getWidth()/2), (int) (this.getHeight()/2-e.setVariable("x", i/marime).evaluate()*marime));
                    //graphics.setColor(Color.green);
