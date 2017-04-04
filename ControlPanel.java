@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package drawingframe;
+package l6;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.ComponentOrientation;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.GridLayout;
 import javax.swing.*;
@@ -25,22 +27,23 @@ public class ControlPanel extends JPanel  {
 
     public void arange() {
         
-        this.setLayout(new GridLayout(3, 4, 19, 10));
+        //this.setLayout(new GridLayout(3, 4, 19, 10));
         this.setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
         
     }
     
     public ControlPanel() {
+         this.setLayout(new FlowLayout());
       // DrawingFrame DF=new DrawingFrame();
         SAVE.setText("SAVE");
-        add(SAVE);
+        add(SAVE,BorderLayout.SOUTH);
         LOAD.setText("LOAD");
-        add(LOAD);
+        add(LOAD,BorderLayout.SOUTH);
         
         RESET.setText("RESET");
-        add(RESET);setBackground(Color.MAGENTA);
-         setBackground(Color.MAGENTA);
-        
+        add(RESET,BorderLayout.SOUTH);
+         //setBackground(Color.MAGENTA);
+         this.setSize(new Dimension(100,700));
     }
 
     
