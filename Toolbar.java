@@ -31,8 +31,9 @@ public class Toolbar extends JPanel{
     JLabel textgol=new JLabel();
     JLabel textgol1=new JLabel();
     JLabel textgol2=new JLabel();
-    JLabel textgol3=new JLabel();
     JButton deseneazaGraf=new JButton();
+    
+    JSpinner marime = new JSpinner(new SpinnerNumberModel(10, 10, 100, 10));
     public Toolbar(){
                 
 
@@ -49,14 +50,16 @@ public class Toolbar extends JPanel{
         //setBackground(Color.gray);
         add.setText("ADD");
         add(add);
-        add(textgol3);
-        add(textgol);
+       
         this.setSize(new Dimension(200,200));
         functie.setText("FUNCTIE:");
         add(functie);
       
         add(text);
         text.setSize(new Dimension(200,100));
+        textgol.setText("Marime:");
+         add(textgol);
+         add(marime);
         this.setLayout(new GridLayout(4, 2));
         deseneazaGraf.setText("Deseneaza graf");
         add(deseneazaGraf);

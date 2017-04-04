@@ -125,7 +125,7 @@ public class DrawingFrame extends JFrame {
 
             private void selectionButtonPressed() {
                
-                canvas.deseneazaGraf(canvas.getGraphics(),toolbar.text.getText(),50);
+                canvas.deseneazaGraf(canvas.getGraphics(),toolbar.text.getText(),(int)(toolbar.marime.getValue()));
                 
                 canvas.deseneazaAxe(canvas.getGraphics());
             }
